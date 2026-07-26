@@ -6,7 +6,7 @@
       "keywords": ["HTML slides", "Swiper", "Channels"]
     },
     "zh-CN": {
-      "title": "在线演示文稿",
+      "title": "Slides",
       "subtitle": "基于网页的全屏演示主题，支持栏目与 HTML 幻灯片，Swiper 流畅切换与键盘导航。",
       "keywords": ["HTML 幻灯片", "Swiper 切换", "栏目演示"]
     }
