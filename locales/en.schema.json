@@ -1,5 +1,5 @@
 {
-  "theme_label": "PPT",
+  "theme_label": "Slides",
   "theme_description": "Web-based fullscreen presentation theme with channels and HTML slides powered by Swiper.",
   "recommendations": {
     "scheme1": {
@@ -18,7 +18,7 @@
       },
       "slogan": {
         "label": "Site slogan",
-        "default": "PPT — fullscreen web presentations for every device"
+        "default": "Slides — fullscreen web presentations for every device"
       },
       "company_name": {
         "label": "Company name",
@@ -52,7 +52,7 @@
       },
       "company_info": {
         "label": "Footer company info",
-        "default": "PPT — build responsive fullscreen slide decks on the web"
+        "default": "Slides — build responsive fullscreen slide decks on the web"
       },
       "copyright_info": {
         "label": "Footer copyright",

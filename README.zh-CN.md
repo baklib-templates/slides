@@ -1,8 +1,8 @@
-# Baklib CMS — 在线演示文稿主题（简体中文说明）
+# Baklib CMS — Slides 在线演示文稿主题（简体中文说明）
 
 面向 Baklib 站点的 **网页全屏演示** 主题：以栏目组织幻灯片，支持 HTML 内容、Swiper 切换、键盘导航与多端适配。
 
-模板 git 地址：https://github.com/baklib-templates/ppt
+模板 git 地址：https://github.com/baklib-templates/slides
 
 ---
 
@@ -28,7 +28,7 @@
 
 ## 安装教程
 
-在 Baklib 模板市场中找到【在线演示文稿 / PPT】，点击安装即可。
+在 Baklib 模板市场中找到【Slides / 在线演示文稿】，点击安装即可。
 
 1. 在首页下创建 **栏目** 页面，使用 channel 模板。
 2. 在栏目下添加子 **页面**，每个子页面即一张幻灯片，填写 HTML 内容。
@@ -39,4 +39,4 @@
 ## 其它文档
 
 - 英文总览：[README.md](./README.md)
-- 主题帮助：[www.baklib.com/themes](https://www.baklib.com/themes/ppt)
+- 主题帮助：[www.baklib.com/themes](https://www.baklib.com/themes/slides)

@@ -1,8 +1,8 @@
-# Baklib CMS — PPT theme
+# Baklib CMS — Slides theme
 
 A **web-based fullscreen presentation** theme for Baklib-powered sites. Build channel-based slide decks with HTML content, Swiper transitions, keyboard navigation, and responsive layouts for desktop and mobile.
 
-Template Git URL: https://github.com/baklib-templates/ppt
+Template Git URL: https://github.com/baklib-templates/slides
 
 ---
 
@@ -28,7 +28,7 @@ Template Git URL: https://github.com/baklib-templates/ppt
 
 ## Installation
 
-Find **PPT** in the Baklib template marketplace, click install, and you're ready to go.
+Find **Slides** in the Baklib template marketplace, click install, and you're ready to go.
 
 1. Create a **channel** page under the home page using the channel template.
 2. Add child **page** entries — each page is one slide with HTML content.
@@ -39,4 +39,4 @@ Find **PPT** in the Baklib template marketplace, click install, and you're ready
 ## Other documents
 
 - Chinese overview: [README.zh-CN.md](./README.zh-CN.md)
-- Theme help: [www.baklib.ai/themes](https://www.baklib.ai/themes/ppt)
+- Theme help: [www.baklib.ai/themes](https://www.baklib.ai/themes/slides)

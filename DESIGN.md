@@ -1,10 +1,10 @@
-# PPT 主题 · 单页幻灯片生成 SKILL
+# Slides 主题 · 单页幻灯片生成 SKILL
 
-> **用途**：指导 AI Agent 为 Baklib PPT 主题生成**一张**幻灯片的 `page.settings.html_content`（HTML 片段），确保在 `channel.liquid` 全屏演示中尺寸、安全区与视觉风格一致。
+> **用途**：指导 AI Agent 为 Baklib Slides 主题生成**一张**幻灯片的 `page.settings.html_content`（HTML 片段），确保在 `channel.liquid` 全屏演示中尺寸、安全区与视觉风格一致。
 >
 > **权威实现**：`templates/channel.liquid`、`templates/page.liquid`、`src/stylesheets/application.css`、`src/javascripts/application.js`
 >
-> **相关参考**：`FONT_AWESOME_ICONS.md`（图标）、`statics/ppt.liquid`（内置示例幻灯片）、`templates/components.liquid` + `snippets/_component.liquid`（组件库）
+> **相关参考**：`FONT_AWESOME_ICONS.md`（图标）、`statics/slides.liquid`（内置示例幻灯片）、`templates/components.liquid` + `snippets/_component.liquid`（组件库）
 
 ---
 
@@ -82,7 +82,7 @@ main (100vh)
 | `menuOpen` | 右上角目录浮层 |
 | `swiper.slidePrev/Next` | 翻页；`allowTouchMove: false` 禁用触摸滑动 |
 | 键盘 | ←↑ 上一张，→↓ 下一张，Home/End 首尾 |
-| `logoSvg` | 在 `statics/ppt.liquid` 示例中通过 `x-html="logoSvg"` 显示；**当前 channel.liquid 不向用户幻灯片注入 logo** — 若需要 logo，在 `html_content` 内自行用 `<img>` |
+| `logoSvg` | 在 `statics/slides.liquid` 示例中通过 `x-html="logoSvg"` 显示；**当前 channel.liquid 不向用户幻灯片注入 logo** — 若需要 logo，在 `html_content` 内自行用 `<img>` |
 
 ---
 
@@ -120,7 +120,7 @@ main (100vh)
 
 亦可使用 CSS 工具类 `.glass`（`application.css` 已定义）。
 
-### 3.2 字号阶梯（与 statics/ppt.liquid 示例对齐）
+### 3.2 字号阶梯（与 statics/slides.liquid 示例对齐）
 
 | 角色 | 推荐类 | 备注 |
 |------|--------|------|
@@ -395,7 +395,7 @@ main (100vh)
 
 ## 附录 C：存量代码说明
 
-`statics/ppt.liquid` 与部分历史幻灯片大量使用 `slate-*`、`teal-*` 及固定 `h-80` 卡片——为迁移前示例。**新生成内容以本文语义 Token 与 flex 安全区为准**，无需回头批量改旧稿除非用户明确要求。
+`statics/slides.liquid` 与部分历史幻灯片大量使用 `slate-*`、`teal-*` 及固定 `h-80` 卡片——为迁移前示例。**新生成内容以本文语义 Token 与 flex 安全区为准**，无需回头批量改旧稿除非用户明确要求。
 
 ## 附录 D：单页 CSS / JS 自包含
 

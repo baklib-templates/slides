@@ -1,15 +1,15 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "ppt",
+    "theme_name": "slides",
     "theme_label": "t:schema.theme_label",
     "theme_description": "t:schema.theme_description",
     "theme_version": "1.0.0",
     "theme_syntax_version": "v2",
     "theme_scope": "cms",
     "theme_author": "Baklib",
-    "theme_documentation_url": "https://www.github.com/baklib-templates/ppt",
-    "theme_support_url": "https://www.github.com/baklib-templates/ppt",
+    "theme_documentation_url": "https://www.github.com/baklib-templates/slides",
+    "theme_support_url": "https://www.github.com/baklib-templates/slides",
     "theme_thumb_url": "images/theme/thumb.png",
     "theme_preview_images": [
       "images/theme/${lang}/cover.png",

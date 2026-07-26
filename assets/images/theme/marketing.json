@@ -1,7 +1,7 @@
 {
   "copy": {
     "en": {
-      "title": "PPT",
+      "title": "Slides",
       "subtitle": "Web-based fullscreen presentation theme with channels and HTML slides powered by Swiper.",
       "keywords": ["HTML slides", "Swiper", "Channels"]
     },

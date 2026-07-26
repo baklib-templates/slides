@@ -1,4 +1,4 @@
-// PPT 幻灯片主题 JavaScript
+// Slides 幻灯片主题 JavaScript
 
 // 导入依赖库
 import Swiper from 'swiper';

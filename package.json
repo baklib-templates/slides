@@ -1,7 +1,7 @@
 {
-  "name": "ppt",
+  "name": "slides",
   "version": "1.0.0",
-  "description": "PPT — web-based fullscreen presentation theme with channels and HTML slides",
+  "description": "Slides — web-based fullscreen presentation theme with channels and HTML slides",
   "scripts": {
     "build": "npm-run-all build:fonts build:css build:js",
     "build:fonts": "mkdir -p assets/webfonts && cp -r node_modules/@fortawesome/fontawesome-free/webfonts/* assets/webfonts/",

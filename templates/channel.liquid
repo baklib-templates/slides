@@ -1,4 +1,4 @@
-{% comment %} 栏目页：完整的 PPT 幻灯片展示框架 {% endcomment %}
+{% comment %} 栏目页：完整的 Slides 幻灯片展示框架 {% endcomment %}
 {% assign slides = page.children_in_list %}
 {% assign slides_count = slides | size %}
 {% assign total_slides = slides_count | plus: 1 %}
@@ -223,8 +223,8 @@
 
 {% schema %}
   {
-    "name": "栏目页 - PPT 幻灯片版本",
-    "description": "完整的 PPT 幻灯片展示页面，包含导航和控制，适合在手机端展示",
+    "name": "栏目页 - Slides 幻灯片版本",
+    "description": "完整的幻灯片展示页面，包含导航和控制，适合在手机端展示",
     "thumb_url": "images/theme/thumb.png",
     "preview_image_urls": [
       "images/theme/${lang}/channel.png"

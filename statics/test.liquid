@@ -1,0 +1,87 @@
+<!-- 我们的服务 Services -->
+{% assign service_channel = site.pages['/services'] %}
+<section class="bg-white py-6 sm:py-12">
+    <div class="mx-auto max-w-6xl px-4">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2 class="font-semibold tracking-tight text-gray-800 md:text-2xl text-xl flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 w-8 h-8 text-primary mr-1">
+                    <path fill-rule="evenodd" d="M4.5 7.5a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-9a3 3 0 0 1-3-3v-9Z" clip-rule="evenodd" />
+                </svg>
+                {{ service_channel.settings.title }}</h2>
+            <p class="mt-2 ml-2 text-sm text-gray-500">{{ service_channel.settings.description }}</p>
+        </div>
+        <div class="mt-4 sm:mt-8">
+            <dl class="grid grid-cols-1 gap-0 lg:grid-cols-4">
+                {% assign service_guozi = site.pages['/services/guozi'] %}
+                <div class="flex flex-col p-3 md:p-6 items-center bg-gray-100 mb-3 md:mb-8">
+                    <dt class="text-xl font-semibold text-gray-900">
+                        <div class="mb-6 flex items-center justify-center">
+                            <svg class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z" />
+                            </svg>
+                        </div>
+                        {{ service_guozi.settings.title }}
+                    </dt>
+                    <dd class="mt-1 flex flex-auto flex-col text-gray-600">
+                        <p class="flex-auto mt-2 text-sm">{{ service_guozi.settings.description }}</p>
+                        <p class="mt-6">
+                            <a href="/services/guozi/about" class="font-semibold text-sm text-primary">查看更多 <span aria-hidden="true">→</span></a>
+                        </p>
+                    </dd>
+                </div>
+                {% assign service_projects = site.pages['/services/projects'] %}
+                <div class="flex flex-col p-3 md:p-6 items-center bg-primary text-white mt-8">
+                    <dt class="text-xl font-semibold text-white">
+                        <div class="mb-6 flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                            </svg>
+                        </div>
+                        {{ service_projects.settings.title }}
+                    </dt>
+                    <dd class="mt-1 flex flex-auto flex-col text-base/7">
+                        <p class="flex-auto mt-2 text-sm">
+                            {{ service_projects.settings.description }}</p>
+                        <p class="mt-6">
+                            <a href="/services/projects/1110" class="font-semibold text-sm text-white">查看更多 <span aria-hidden="true">→</span></a>
+                        </p>
+                    </dd>
+                </div>
+                {% assign service_digital= site.pages['/services/digital'] %}
+                <div class="flex flex-col p-3 md:p-6 items-center bg-gray-100 mb-3 md:mb-8">
+                    <dt class="text-xl font-semibold text-gray-900">
+                        <div class="mb-6 flex items-center justify-center">
+                            <svg class="w-10 h-10 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                            </svg>
+                        </div>
+                        {{ service_digital.settings.title}}
+                    </dt>
+                    <dd class="mt-1 flex flex-auto flex-col text-gray-600">
+                        <p class="flex-auto mt-2 text-sm">{{ service_digital.settings.description }}</p>
+                        <p class="mt-6">
+                            <a href="/services/digital/b371" class="font-semibold text-sm text-primary">查看更多 <span aria-hidden="true">→</span></a>
+                        </p>
+                    </dd>
+                </div>
+                {% assign service_rent= site.pages['/services/rent'] %}
+                <div class="flex flex-col p-3 md:p-6 items-center bg-primary text-white mt-8">
+                    <dt class="text-xl font-semibold text-white">
+                        <div class="mb-6 flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+                            </svg>
+                        </div>
+                        {{ service_rent.settings.title }}
+                    </dt>
+                    <dd class="mt-1 flex flex-auto flex-col text-base/7">
+                        <p class="flex-auto mt-2 text-sm">{{ service_rent.settings.description }}</p>
+                        <p class="mt-6">
+                            <a href="/services/rent/d03c" class="font-semibold text-sm text-white">查看更多 <span aria-hidden="true">→</span></a>
+                        </p>
+                    </dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+</section>
