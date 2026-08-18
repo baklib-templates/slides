@@ -3,6 +3,13 @@
 // 导入依赖库
 import Swiper from 'swiper';
 import Alpine from 'alpinejs';
+import * as lucide from 'lucide';
+
+// 将 Lucide 挂载到 window，供幻灯片 HTML 内容调用
+window.lucide = lucide;
+
+// 页面加载后自动渲染所有 <i data-lucide="xxx"> 元素
+document.addEventListener('DOMContentLoaded', () => lucide.createIcons());
 
 // 注意：Swiper CSS 在 application.css 中通过 @import 'swiper/swiper-bundle.css' 导入
 // 注意：Font Awesome CSS 在 application.css 中通过 @import 导入

@@ -1,0 +1,509 @@
+{% comment %} 开源素材库速查页 — Slides 主题 {% endcomment %}
+
+<div class="min-h-screen bg-gradient-to-br from-slate-50 via-white to-primary-50">
+
+  <!-- 页头 -->
+  <header class="sticky top-0 z-30 bg-white/80 backdrop-blur-xl border-b border-slate-200 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <i data-lucide="package-open" class="w-7 h-7 text-primary"></i>
+        <div>
+          <h1 class="text-xl font-bold text-slate-800">开源素材库速查</h1>
+          <p class="text-xs text-slate-500">为 Slides 幻灯片生成提供可用资源</p>
+        </div>
+      </div>
+      <a href="{{ statics['guide'] }}" class="flex items-center gap-1.5 text-sm text-slate-500 hover:text-primary transition-colors">
+        <i data-lucide="book-open" class="w-4 h-4"></i>
+        操作指南
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-10 space-y-12">
+
+    <!-- 图标库 -->
+    <section>
+      <div class="flex items-center gap-2 mb-6">
+        <i data-lucide="shapes" class="w-5 h-5 text-primary"></i>
+        <h2 class="text-lg font-bold text-slate-800">图标库</h2>
+        <span class="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">可直接在 HTML 中使用</span>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Lucide -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-200 flex items-center justify-center">
+                <i data-lucide="zap" class="w-5 h-5 text-orange-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">Lucide</h3>
+                <span class="text-xs text-green-600 font-medium bg-green-50 px-1.5 py-0.5 rounded">已内置 ✓</span>
+              </div>
+            </div>
+            <a href="https://lucide.dev/icons/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">1500+ 精致线型图标，已打包进主题，无需额外引入。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono">
+            &lt;i data-lucide="rocket" class="w-6 h-6"&gt;&lt;/i&gt;
+          </div>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <i data-lucide="rocket" class="w-5 h-5 text-orange-500"></i>
+            <i data-lucide="layers" class="w-5 h-5 text-blue-500"></i>
+            <i data-lucide="globe" class="w-5 h-5 text-green-500"></i>
+            <i data-lucide="cpu" class="w-5 h-5 text-purple-500"></i>
+            <i data-lucide="trending-up" class="w-5 h-5 text-primary"></i>
+            <i data-lucide="shield" class="w-5 h-5 text-slate-500"></i>
+          </div>
+        </div>
+
+        <!-- Font Awesome -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center">
+                <span class="text-blue-600 font-bold text-sm">FA</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">Font Awesome 6</h3>
+                <span class="text-xs text-green-600 font-medium bg-green-50 px-1.5 py-0.5 rounded">已内置 ✓</span>
+              </div>
+            </div>
+            <a href="https://fontawesome.com/icons" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">2000+ 图标，含实心/线型/品牌三种风格，已本地字体化。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono">
+            &lt;i class="fas fa-rocket"&gt;&lt;/i&gt;<br>
+            &lt;i class="fab fa-github"&gt;&lt;/i&gt;
+          </div>
+          <div class="mt-3 flex flex-wrap gap-2 text-lg">
+            <i class="fas fa-rocket text-orange-500"></i>
+            <i class="fas fa-database text-blue-500"></i>
+            <i class="fab fa-github text-slate-700"></i>
+            <i class="fab fa-youtube text-red-500"></i>
+            <i class="fas fa-chart-bar text-primary"></i>
+            <i class="fas fa-shield-alt text-green-500"></i>
+          </div>
+        </div>
+
+        <!-- Heroicons -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-indigo-50 border border-indigo-200 flex items-center justify-center">
+                <i data-lucide="layout-template" class="w-5 h-5 text-indigo-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">Heroicons</h3>
+                <span class="text-xs text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded">SVG 内联</span>
+              </div>
+            </div>
+            <a href="https://heroicons.com/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">Tailwind 官方出品，线型/实心两套，直接复制 SVG 代码内联使用。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono leading-5">
+            &lt;!-- 复制 SVG 粘贴进 HTML --&gt;<br>
+            &lt;svg class="w-6 h-6" ...&gt;...&lt;/svg&gt;
+          </div>
+        </div>
+
+        <!-- Phosphor Icons -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center">
+                <i data-lucide="pentagon" class="w-5 h-5 text-amber-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">Phosphor Icons</h3>
+                <span class="text-xs text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded">CDN / SVG</span>
+              </div>
+            </div>
+            <a href="https://phosphoricons.com/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">7500+ 图标，6 种粗细风格（thin / light / regular / bold / fill / duotone），颜色灵活。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono leading-5">
+            &lt;!-- CDN 引入后 --&gt;<br>
+            &lt;ph-rocket weight="duotone"&gt;&lt;/ph-rocket&gt;
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 插画库 -->
+    <section>
+      <div class="flex items-center gap-2 mb-6">
+        <i data-lucide="image" class="w-5 h-5 text-primary"></i>
+        <h2 class="text-lg font-bold text-slate-800">插画库</h2>
+        <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">免费商用 / 需署名</span>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- unDraw -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-violet-50 border border-violet-200 flex items-center justify-center">
+                <i data-lucide="brush" class="w-5 h-5 text-violet-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">unDraw</h3>
+                <span class="text-xs text-green-600 bg-green-50 px-1.5 py-0.5 rounded">免费商用</span>
+              </div>
+            </div>
+            <a href="https://undraw.co/illustrations" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">开源 SVG 插画，可在线调整主题色后下载，与品牌色高度契合。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono">
+            &lt;img src="undraw_rocket.svg" class="w-full"&gt;
+          </div>
+          <p class="mt-2 text-xs text-slate-400">无需署名，可直接商用</p>
+        </div>
+
+        <!-- Storyset -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-pink-50 border border-pink-200 flex items-center justify-center">
+                <i data-lucide="sparkles" class="w-5 h-5 text-pink-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">Storyset</h3>
+                <span class="text-xs text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded">需署名</span>
+              </div>
+            </div>
+            <a href="https://storyset.com/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">支持动效 SVG，多种插画风格（flat / outline / amico / pana），适合活泼主题。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono">
+            &lt;img src="storyset-team.svg" class="w-full"&gt;
+          </div>
+          <p class="mt-2 text-xs text-slate-400">免费版需保留 Storyset 署名链接</p>
+        </div>
+
+        <!-- 3dicons -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-cyan-50 border border-cyan-200 flex items-center justify-center">
+                <i data-lucide="box" class="w-5 h-5 text-cyan-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">3dicons</h3>
+                <span class="text-xs text-green-600 bg-green-50 px-1.5 py-0.5 rounded">免费商用</span>
+              </div>
+            </div>
+            <a href="https://3dicons.co/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">开源 3D 图标，PNG / SVG 格式，适合科技感幻灯片，商用无需署名。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono">
+            &lt;img src="3dicon-rocket.png" class="w-24 h-24"&gt;
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 照片库 -->
+    <section>
+      <div class="flex items-center gap-2 mb-6">
+        <i data-lucide="camera" class="w-5 h-5 text-primary"></i>
+        <h2 class="text-lg font-bold text-slate-800">照片库</h2>
+        <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">可直链使用</span>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Unsplash -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center">
+                <i data-lucide="aperture" class="w-5 h-5 text-slate-700"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">Unsplash</h3>
+                <span class="text-xs text-green-600 bg-green-50 px-1.5 py-0.5 rounded">免费商用</span>
+              </div>
+            </div>
+            <a href="https://unsplash.com/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">高质量摄影图，支持按关键词随机获取图片，适合快速填充背景。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono leading-5">
+            &lt;!-- 1600x900 随机科技图 --&gt;<br>
+            &lt;img src="https://source.unsplash.com/<br>&nbsp;&nbsp;1600x900/?technology"&gt;
+          </div>
+          <p class="mt-2 text-xs text-slate-400">可替换关键词：city / nature / business / abstract</p>
+        </div>
+
+        <!-- Pexels -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-green-50 border border-green-200 flex items-center justify-center">
+                <i data-lucide="image" class="w-5 h-5 text-green-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">Pexels</h3>
+                <span class="text-xs text-green-600 bg-green-50 px-1.5 py-0.5 rounded">免费商用</span>
+              </div>
+            </div>
+            <a href="https://www.pexels.com/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">免费高清摄影与视频，可搜索并复制图片直链嵌入幻灯片。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono">
+            &lt;!-- 复制图片直链 --&gt;<br>
+            &lt;img src="https://images.pexels.com/..."&gt;
+          </div>
+        </div>
+
+        <!-- Picsum -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center">
+                <i data-lucide="grid-2x2" class="w-5 h-5 text-teal-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">Lorem Picsum</h3>
+                <span class="text-xs text-green-600 bg-green-50 px-1.5 py-0.5 rounded">免费</span>
+              </div>
+            </div>
+            <a href="https://picsum.photos/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">快速获取任意尺寸占位图，适合原型和演示场景，支持灰度/模糊参数。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono leading-5">
+            &lt;!-- 1600x900 随机图 --&gt;<br>
+            &lt;img src="https://picsum.photos/1600/900"&gt;<br>
+            &lt;!-- 固定图片 ID --&gt;<br>
+            &lt;img src="https://picsum.photos/id/42/1600/900"&gt;
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 背景与纹理 -->
+    <section>
+      <div class="flex items-center gap-2 mb-6">
+        <i data-lucide="paintbrush" class="w-5 h-5 text-primary"></i>
+        <h2 class="text-lg font-bold text-slate-800">背景纹理 &amp; 渐变</h2>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Hero Patterns -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+                <i data-lucide="grid" class="w-5 h-5 text-rose-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">Hero Patterns</h3>
+                <span class="text-xs text-green-600 bg-green-50 px-1.5 py-0.5 rounded">免费开源</span>
+              </div>
+            </div>
+            <a href="https://heropatterns.com/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">SVG 背景纹理生成器，可调颜色/透明度，复制 CSS 粘贴即用。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono leading-5">
+            background-image: url("data:image/svg+xml,...");<br>
+            background-color: #ffffff;
+          </div>
+        </div>
+
+        <!-- UI Gradients -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
+                <i data-lucide="blend" class="w-5 h-5 text-white"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">UI Gradients</h3>
+                <span class="text-xs text-green-600 bg-green-50 px-1.5 py-0.5 rounded">免费</span>
+              </div>
+            </div>
+            <a href="https://uigradients.com/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">精选渐变配色库，复制 CSS 代码，快速给幻灯片背景和卡片上色。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono">
+            background: linear-gradient(<br>
+            &nbsp;&nbsp;to right, #6a11cb, #2575fc<br>
+            );
+          </div>
+        </div>
+
+        <!-- CSS Gradient -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-sky-50 border border-sky-200 flex items-center justify-center">
+                <i data-lucide="droplets" class="w-5 h-5 text-sky-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">CSS Gradient</h3>
+                <span class="text-xs text-green-600 bg-green-50 px-1.5 py-0.5 rounded">免费</span>
+              </div>
+            </div>
+            <a href="https://cssgradient.io/" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">可视化渐变生成器，支持 linear / radial / conic，拖拽即得 CSS。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono leading-5">
+            background: conic-gradient(<br>
+            &nbsp;&nbsp;from 45deg, #e0005b, #5fd3b3<br>
+            );
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Lottie 动画 -->
+    <section>
+      <div class="flex items-center gap-2 mb-6">
+        <i data-lucide="film" class="w-5 h-5 text-primary"></i>
+        <h2 class="text-lg font-bold text-slate-800">Lottie 动画</h2>
+        <span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full">需引入 lottie-player</span>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2">
+
+        <!-- LottieFiles -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center">
+                <i data-lucide="play-circle" class="w-5 h-5 text-teal-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">LottieFiles</h3>
+                <span class="text-xs text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded">部分免费</span>
+              </div>
+            </div>
+            <a href="https://lottiefiles.com/featured" target="_blank" rel="noopener" class="text-slate-400 hover:text-primary transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">JSON 格式矢量动画，适合幻灯片中的 Loading、成功状态、图表动效等场景。</p>
+          <div class="bg-slate-900 rounded-lg px-3 py-2 text-xs text-green-400 font-mono leading-5">
+            &lt;!-- 需在 head 引入 CDN --&gt;<br>
+            &lt;script src="https://unpkg.com/@lottiefiles/<br>
+            &nbsp;&nbsp;lottie-player@latest"&gt;&lt;/script&gt;<br><br>
+            &lt;lottie-player<br>
+            &nbsp;&nbsp;src="https://assets.lottiefiles.com/..."<br>
+            &nbsp;&nbsp;background="transparent"<br>
+            &nbsp;&nbsp;speed="1" loop autoplay&gt;<br>
+            &lt;/lottie-player&gt;
+          </div>
+        </div>
+
+        <!-- Dotlottie -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition-shadow">
+          <div class="flex items-start justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-indigo-50 border border-indigo-200 flex items-center justify-center">
+                <i data-lucide="circle-play" class="w-5 h-5 text-indigo-500"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-800">使用技巧</h3>
+                <span class="text-xs text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded">最佳实践</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 mb-3">在幻灯片中使用动画的建议：</p>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5"></i>
+              单张幻灯片最多 1-2 个动画，避免视觉混乱
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5"></i>
+              选择与主题色相符的 Lottie 动画（可在 LottieFiles 在线改色）
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5"></i>
+              loop 动画适合封面/等待页，once 动画适合内容页强调
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5"></i>
+              导出 PDF 前记得关闭动画（autoplay 去除）
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- AI 提示词建议 -->
+    <section class="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/20 p-6">
+      <div class="flex items-center gap-2 mb-4">
+        <i data-lucide="bot" class="w-5 h-5 text-primary"></i>
+        <h2 class="text-lg font-bold text-slate-800">AI 生成幻灯片时的素材提示词</h2>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div>
+          <h3 class="text-sm font-semibold text-slate-700 mb-2">图片占位建议提示词</h3>
+          <div class="bg-white rounded-xl border border-slate-200 p-3 text-sm text-slate-600 leading-relaxed">
+            遇到需要配图的地方，使用 Unsplash 随机图片：
+            <code class="text-xs bg-slate-100 px-1 rounded">https://source.unsplash.com/1600x900/?关键词</code>
+            或 Lorem Picsum：
+            <code class="text-xs bg-slate-100 px-1 rounded">https://picsum.photos/1600/900</code>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-slate-700 mb-2">图标使用建议提示词</h3>
+          <div class="bg-white rounded-xl border border-slate-200 p-3 text-sm text-slate-600 leading-relaxed">
+            图标统一使用 Lucide 格式：
+            <code class="text-xs bg-slate-100 px-1 rounded">&lt;i data-lucide="图标名" class="w-6 h-6"&gt;&lt;/i&gt;</code>
+            图标名参考 <a href="https://lucide.dev/icons/" target="_blank" class="text-primary underline">lucide.dev/icons</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="border-t border-slate-200 bg-white/60 backdrop-blur-xl mt-12 px-6 py-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between text-sm text-slate-400">
+      <span>Slides 主题 — 开源素材速查</span>
+      <a href="{{ statics['guide'] }}" class="flex items-center gap-1 hover:text-primary transition-colors">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        返回操作指南
+      </a>
+    </div>
+  </footer>
+
+</div>

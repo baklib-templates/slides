@@ -1,0 +1,26 @@
+{
+  "pages": {
+    "index": {
+      "screenshot": "assets/images/screenshots/index.png",
+      "titles": {
+        "en": "Slides",
+        "zh-CN": "Slides"
+      },
+      "subtitles": {
+        "en": "Web-based fullscreen presentation theme with channels and HTML slides powered by Swiper.",
+        "zh-CN": "基于网页的全屏演示主题，支持栏目与 HTML 幻灯片，Swiper 流畅切换与键盘导航。"
+      }
+    },
+    "channel": {
+      "screenshot": "assets/images/screenshots/channel.png",
+      "titles": {
+        "en": "Slides",
+        "zh-CN": "Slides"
+      },
+      "subtitles": {
+        "en": "Browse presentation channels and launch fullscreen HTML slide decks.",
+        "zh-CN": "浏览演示栏目，全屏播放 HTML 幻灯片。"
+      }
+    }
+  }
+}

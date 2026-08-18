@@ -60,6 +60,14 @@
   </style>
 
     {{ site.settings.head_html }}
+    {% weixin_share_tag app_id: site.settings.weixin_app_id, app_secret: site.settings.weixin_app_secret, debug: site.settings.weixin_debug, enabled: site.settings.weixin_enabled %}
+
+    {%- comment -%}
+      Lucide 图标库已通过 npm + esbuild 打包进 main.js，页面中直接使用：
+        <i data-lucide="icon-name" class="w-6 h-6"></i>
+      如需临时使用 CDN 版本（无需重新构建），取消注释下行并注释掉 main.js 中的 lucide import：
+      <script src="https://unpkg.com/lucide@latest"></script>
+    {%- endcomment -%}
 
   </head>
   <body class="font-sans text-base font-normal text-gray-700 dark:bg-gray-800 dark:text-gray-300">
