@@ -179,7 +179,7 @@
                 placeholder="请输入提示词内容..."
               >
 参考示例：{{ page.url }}
-生成一段 TailwindCSS 样式的 HTML 代码，用于制作 Web Slides 的一页幻灯片存放在 swiper-slide 里面，遇到图片则在 Unsplash（https://unsplash.com/）找一张替代，不需要添加页面边距和宽高控制。
+生成一段 TailwindCSS + daisyUI 的 HTML 片段，作为 Web Slides 一页的 html_content：只写玻璃卡片内部，根节点使用 flex flex-col flex-1 min-h-0 w-full，不要 swiper-slide / main / h-screen / 页面边距与宽高控制。遇到图片则在 Unsplash（https://unsplash.com/）找一张替代。
 页面里要填充的内容如下：
 
 {{ page.settings.prompt }}

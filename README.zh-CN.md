@@ -36,6 +36,21 @@
 
 ---
 
+## 技能库（生成演示稿时必读）
+
+先打开 **[skills/README.md](./skills/README.md)**：
+
+- [slide-generation](./skills/slide-generation/SKILL.md) — 安全区、语义色、根骨架
+- [slide-components](./skills/slide-components/SKILL.md) — 27 个通用组件
+- [design-systems](./skills/design-systems/SKILL.md) — Apple / Claude / Notion 等气质
+- [slide-plugins](./skills/slide-plugins/SKILL.md) — daisyUI、Chart.js、Mermaid、代码高亮、GSAP、放大、二维码
+
+旧文档入口：[DESIGN.md](./DESIGN.md)
+
+## 前端插件
+
+已打包：Font Awesome、Alpine.js、Lucide、Swiper、Chart.js、Mermaid、highlight.js、GSAP、medium-zoom、qrcode。daisyUI 5 以独立 CSS `assets/css/daisyui.css` 加载（不作为 Tailwind 3 插件）。CMS 里动态工具类仍依赖 Tailwind CDN。
+
 ## 其它文档
 
 - 英文总览：[README.md](./README.md)

@@ -176,10 +176,10 @@
               on: {
                 slideChange: (s) => {
                   this.currentIndex = s.activeIndex;
-                  // 强制更新进度条（确保响应式更新）
-                  this.$nextTick(() => {
-                    // 触发响应式更新
-                  });
+                  const host = s.slides[s.activeIndex] && s.slides[s.activeIndex].querySelector('.slide-html-host');
+                  if (window.slidesEnhancements) {
+                    window.slidesEnhancements.refresh(host || undefined);
+                  }
                 },
               },
             });

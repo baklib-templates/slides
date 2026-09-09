@@ -13,6 +13,8 @@
     <!-- Custom JS - 包含所有依赖库 -->
     {{ 'javascripts/main.js' | asset_url | script_tag: defer: true, data-turbo-track: 'reload' }}
     {{ 'javascripts/theme.js' | asset_url | script_tag: defer: true, data-turbo-track: 'reload' }}
+    <!-- daisyUI 5 独立 CSS（CMS html_content 动态类名）；主题色见下方 --color-* -->
+    {{ 'css/daisyui.css' | asset_url | stylesheet_tag: data-turbo-track: 'reload' }}
     <!-- Custom Styles -->
     {{ 'css/main.css' | asset_url | stylesheet_tag: data-turbo-track: 'reload' }}
 

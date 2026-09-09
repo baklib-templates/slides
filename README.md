@@ -36,6 +36,21 @@ Find **Slides** in the Baklib template marketplace, click install, and you're re
 
 ---
 
+## Skills (for AI / next decks)
+
+When generating slide HTML, start at **[skills/README.md](./skills/README.md)**:
+
+- [slide-generation](./skills/slide-generation/SKILL.md) — safe area, tokens, root skeleton
+- [slide-components](./skills/slide-components/SKILL.md) — 27 reusable layouts
+- [design-systems](./skills/design-systems/SKILL.md) — Apple / Claude / Notion / …
+- [slide-plugins](./skills/slide-plugins/SKILL.md) — daisyUI, Chart.js, Mermaid, highlight.js, GSAP, zoom, QR
+
+Pointer for old links: [DESIGN.md](./DESIGN.md)
+
+## Front-end plugins
+
+Bundled (see `package.json` / `src/javascripts/application.js`): Font Awesome, Alpine.js, Lucide, Swiper, Chart.js, Mermaid, highlight.js, GSAP, medium-zoom, qrcode. daisyUI 5 ships as standalone `assets/css/daisyui.css` (not a Tailwind 3 plugin). CMS `html_content` still relies on the Tailwind CDN for arbitrary utilities.
+
 ## Other documents
 
 - Chinese overview: [README.zh-CN.md](./README.zh-CN.md)
