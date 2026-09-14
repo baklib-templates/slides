@@ -12715,6 +12715,14 @@ video {
   --tw-prose-invert-td-borders: #334155;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
