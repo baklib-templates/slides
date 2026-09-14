@@ -56,7 +56,7 @@
       position: static !important;
       width: 100% !important;
       margin: 0 !important;
-      padding: 0 !important;
+      padding: 10mm 12mm !important;
       border: none !important;
       border-radius: 0 !important;
       background: #fff;
@@ -118,15 +118,15 @@
       width: 100%;
       max-width: 72rem; /* ~1152px，接近 max-w-6xl */
       margin: 0 auto;
-      padding: 1.5rem 1rem 3rem;
+      padding: 2rem 1.25rem 3rem;
     }
 
     .slide-page {
       display: block;
       width: 100%;
       height: auto;
-      margin: 0 0 1.25rem;
-      padding: 0;
+      margin: 0 0 1.5rem;
+      padding: 2.25rem 2.5rem;
       border: none;
       border-radius: 0.75rem;
       box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
@@ -182,30 +182,6 @@
     </section>
   {% endfor %}
 
-  {% comment %} 结语页：与 channel.liquid「结语幻灯片」信息一致，版式改为打印友好 {% endcomment %}
-  <section class="slide-page">
-    <div class="slide-closing">
-      <div class="flex flex-col items-center justify-center gap-2">
-        {% assign default_logo = 'images/theme/logo-white.svg' | asset_url %}
-        <img
-          src="{{ site.settings.logo_url | default: default_logo }}"
-          alt="{{ site.name | escape }}"
-          class="h-32 object-contain"
-        >
-      </div>
-
-      <h2 class="text-3xl lg:text-4xl text-base-content mb-6">
-        {{ site.settings.company_name }}
-      </h2>
-      <div class="flex max-w-6xl mx-auto text-base lg:text-xl text-base-content/70 leading-5 md:leading-8">
-        {{ site.settings.company_descriptionn }}
-      </div>
-
-      <div class="mt-16 text-primary">
-        <a href="{{ site.settings.company_website_url }}" target="_blank" rel="noopener noreferrer">{{ site.settings.company_website_url }}</a>
-      </div>
-    </div>
-  </section>
 </main>
 
 {% schema %}
