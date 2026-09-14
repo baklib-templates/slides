@@ -1,23 +1,25 @@
-{% comment %} PDF 版本栏目页：全宽幻灯片预览，Ctrl+P 逐页打印给客户 {% endcomment %}
+{% comment %} PDF 版本栏目页：按内容增高预览，Ctrl+P 多页打印给客户 {% endcomment %}
 {% assign slides = page.children_in_list %}
 {% assign slides_count = slides | size %}
 
 <style>
-  /* —— 打印：一页一张幻灯片，零边距铺满 —— */
+  /* —— 打印：内容驱动高度，每张 slide 后强制分页 —— */
   @media print {
     @page {
       size: landscape;
-      margin: 0;
+      margin: 12mm;
     }
 
     html,
     body {
-      width: 100%;
-      height: 100%;
+      width: auto !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
       margin: 0 !important;
       padding: 0 !important;
       background: #fff !important;
-      overflow: hidden;
+      overflow: visible !important;
     }
 
     * {
@@ -28,33 +30,40 @@
       text-shadow: none !important;
     }
 
+    /* 解除主题/父级可能带来的裁剪，否则 Chrome 只渲第一页 */
+    body *,
+    .pdf-deck,
+    .slide-page,
+    .slide-content,
+    .content-wrapper,
+    .slide-closing,
+    .slide-html-host {
+      overflow: visible !important;
+      max-height: none !important;
+      height: auto !important;
+    }
+
     .pdf-deck {
-      display: block;
-      width: 100%;
-      max-width: none;
-      margin: 0;
-      padding: 0;
+      display: block !important;
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     .slide-page {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      min-height: 100vh;
-      max-height: 100vh;
-      margin: 0;
-      padding: 0;
-      border: none;
-      border-radius: 0;
-      box-shadow: none;
+      display: block !important;
+      position: static !important;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
       background: #fff;
-      overflow: hidden;
       page-break-after: always;
       break-after: page;
-      page-break-inside: avoid;
-      break-inside: avoid;
+      page-break-inside: auto;
+      break-inside: auto;
     }
 
     .slide-page:last-child {
@@ -64,16 +73,17 @@
 
     .slide-content,
     .content-wrapper,
-    .slide-closing {
-      width: 100%;
-      height: 100%;
-      max-width: none;
-      margin: 0;
-      padding: 0;
-      border: none;
-      border-radius: 0;
-      box-shadow: none;
-      overflow: hidden;
+    .slide-closing,
+    .slide-html-host {
+      display: block !important;
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
+      flex: none !important;
+      min-height: 0 !important;
     }
 
     .no-print {
@@ -89,13 +99,12 @@
     svg,
     canvas,
     video {
-      max-width: 100%;
-      page-break-inside: avoid;
-      break-inside: avoid;
+      max-width: 100% !important;
+      height: auto !important;
     }
   }
 
-  /* —— 屏幕：全宽适配，16:9 预览打印效果 —— */
+  /* —— 屏幕：居中限宽，高度随内容 —— */
   @media screen {
     html,
     body {
@@ -105,41 +114,46 @@
     }
 
     .pdf-deck {
-      display: flex;
-      flex-direction: column;
+      display: block;
       width: 100%;
-      max-width: none;
-      margin: 0;
-      padding: 0;
-      gap: 0.75rem;
+      max-width: 72rem; /* ~1152px，接近 max-w-6xl */
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
     }
 
     .slide-page {
+      display: block;
       width: 100%;
-      max-width: 100%;
-      aspect-ratio: 16 / 9;
       height: auto;
-      min-height: 0;
-      margin: 0;
+      margin: 0 0 1.25rem;
       padding: 0;
       border: none;
-      border-radius: 0;
+      border-radius: 0.75rem;
       box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
       background: #fff;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .slide-content,
     .content-wrapper,
-    .slide-closing {
+    .slide-closing,
+    .slide-html-host {
+      display: block;
       width: 100%;
-      height: 100%;
+      height: auto;
       max-width: none;
       margin: 0;
       padding: 0;
       border: none;
       border-radius: 0;
       box-shadow: none;
+      overflow: visible;
+    }
+
+    .slide-closing {
+      min-height: 22rem;
+      padding: 3rem 1.5rem;
+      border-radius: 0.75rem;
     }
   }
 
@@ -150,39 +164,10 @@
     line-height: 1.6;
   }
 
-  .slide-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
-    text-align: left;
-  }
-
-  .slide-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    min-height: 0;
-  }
-
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    min-height: 0;
-    width: 100%;
-  }
-
-  /* 结语页：去掉内边距与圆角，与内容页一致铺满 */
   .slide-closing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     background: hsl(var(--theme-color-primary) / 0.12);
     color: inherit;
-    overflow: hidden;
   }
 </style>
 
@@ -226,7 +211,7 @@
 {% schema %}
   {
     "name": "栏目页 - PDF 版本",
-    "description": "PDF 版本栏目页，全宽幻灯片预览，适合 Ctrl+P 打印输出给客户",
+    "description": "PDF 版本栏目页，按内容高度预览，适合 Ctrl+P 多页打印输出给客户",
     "thumb_url": "images/theme/thumb.png",
     "preview_image_urls": [
       "images/theme/${lang}/channel.png"
