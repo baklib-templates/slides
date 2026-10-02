@@ -8,5 +8,14 @@
     "footer": {
       "copyright": "版权所有"
     }
+  },
+  "search": {
+    "nav": "搜索",
+    "title": "搜索",
+    "hint": "查找幻灯片和栏目。",
+    "placeholder": "幻灯片标题或关键词",
+    "submit": "搜索",
+    "empty": "没有找到幻灯片。",
+    "prompt": "输入关键词开始搜索。"
   }
 }

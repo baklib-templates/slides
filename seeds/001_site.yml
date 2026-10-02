@@ -1,0 +1,7 @@
+site:
+  language: "zh-CN"
+  time_zone: "Asia/Shanghai"
+  favicon: ""
+  settings:
+    slogan: "用网页播放的示例幻灯片"
+    company_name: "Slides"

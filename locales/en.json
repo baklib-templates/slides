@@ -8,5 +8,14 @@
     "footer": {
       "copyright": "All rights reserved"
     }
+  },
+  "search": {
+    "nav": "Search",
+    "title": "Search",
+    "hint": "Find slides and channels.",
+    "placeholder": "Slide title or keyword",
+    "submit": "Search",
+    "empty": "No slides found.",
+    "prompt": "Enter a keyword to start searching."
   }
 }

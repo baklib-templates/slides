@@ -1,0 +1,76 @@
+pages:
+  name: "首页"
+  slug: "index"
+  template_name: "index"
+  children:
+    - name: "产品发布"
+      slug: "launch"
+      template_name: "channel"
+      settings:
+        title: "产品发布"
+        description: "一场两页的发布会开场（示例数据）"
+        thumb_image_url: "images/theme/zh-CN/cover.png"
+      children:
+        - name: "开场"
+          slug: "opening"
+          template_name: "page"
+          settings:
+            title: "开场"
+            html_content: |
+              <section class="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-slate-900 to-indigo-700 px-8 text-center text-white">
+                <p class="text-sm uppercase tracking-[0.35em] text-white/70">示例幻灯片</p>
+                <h1 class="mt-4 text-4xl font-bold md:text-6xl">产品发布会</h1>
+                <p class="mt-6 max-w-xl text-lg text-white/85">这是一页可以直接播放的示例内容，用来演示栏目里的幻灯片。</p>
+              </section>
+        - name: "三个重点"
+          slug: "highlights"
+          template_name: "page"
+          settings:
+            title: "三个重点"
+            html_content: |
+              <section class="flex h-full w-full flex-col justify-center bg-white px-10 py-12 text-slate-800">
+                <p class="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-600">议程</p>
+                <h2 class="mt-3 text-3xl font-bold md:text-5xl">今天讲三件事</h2>
+                <ol class="mt-8 space-y-4 text-left text-xl">
+                  <li>1. 我们解决什么问题</li>
+                  <li>2. 产品现在能做什么</li>
+                  <li>3. 下一步怎么开始</li>
+                </ol>
+              </section>
+    - name: "团队介绍"
+      slug: "team"
+      template_name: "channel"
+      settings:
+        title: "团队介绍"
+        description: "一页团队概览（示例数据）"
+        thumb_image_url: "images/theme/zh-CN/channel.png"
+      children:
+        - name: "我们是谁"
+          slug: "who-we-are"
+          template_name: "page"
+          settings:
+            title: "我们是谁"
+            html_content: |
+              <section class="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-emerald-700 to-slate-900 px-8 text-center text-white">
+                <h1 class="text-4xl font-bold md:text-6xl">认识团队</h1>
+                <p class="mt-6 max-w-xl text-lg text-white/85">这是一页示例幻灯片。替换标题和正文后，就可以在栏目里连续播放。</p>
+              </section>
+    - name: "客户案例"
+      slug: "stories"
+      template_name: "channel"
+      settings:
+        title: "客户案例"
+        description: "一页案例封面（示例数据）"
+        thumb_image_url: "images/theme/zh-CN/index.png"
+      children:
+        - name: "一个案例"
+          slug: "one-story"
+          template_name: "page"
+          settings:
+            title: "一个案例"
+            html_content: |
+              <section class="flex h-full w-full flex-col justify-center bg-slate-50 px-10 py-12 text-slate-800">
+                <p class="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-600">案例</p>
+                <h2 class="mt-3 text-3xl font-bold md:text-5xl">上线两周，资料查找时间减半</h2>
+                <p class="mt-6 max-w-2xl text-lg text-slate-600">这是一页示例幻灯片，用短句说明结果。正式演示时换成真实客户和数据。</p>
+              </section>
